@@ -1,198 +1,178 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>HeroiCraft</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
-		</noscript>
-	</head>
-	<body class="landing">
+  <head>
+    <title>HeroiCraft</title>
+    <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <!-- Mineraft Specific Stuff -->
+    <script src="js/custom.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+  </head>
+  <body class="landing">
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<h1><img src="images/SrvLogo.png" height="64" width="64" style="vertical-align:middle" /><strong><a href="index.html"> HeroiCraft</a></strong> Minecraft Community</h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="https://reddit.com/r/heroicraft">Reddit</a></li>
-						<li><a href="elements.html">Shop</a></li>
-						<li><a href="generic.html">Vote</a></li>
-						<li><a href="elements.html">Stats</a></li>
-					</ul>
-				</nav>
-			</header>
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1><img src="images/SrvLogo.png" height="64" width="64" style="vertical-align:middle" /><strong><a href="index.html"> HeroiCraft</a></strong> Minecraft Community</h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://reddit.com/r/heroicraft">Reddit</a></li>
+          <!--<li><a href="elements.html">Shop</a></li>
+            <li><a href="generic.html">Vote</a></li>
+            <li><a href="elements.html">Stats</a></li>-->
+        </ul>
+      </nav>
+    </header>
 
-		<!-- Banner -->
-			<section id="banner">
-				<h2>HeroiCraft</h2>
-				<p>Minecraft Server and Communtiy<br /> Survival | Creative | SkyBlock | Games</p>
-				<ul class="actions">
-					<li><a href="#" class="button special big">IP: mc.heroicraft.net</a></li>
-				</ul>
-			</section>
+    <!-- Banner -->
+    <section id="banner">
+      <h2>HeroiCraft</h2>
+      <p>Minecraft Server and Communtiy<br /> Survival | Creative | SkyBlock | Games</p>
+      <ul class="actions">
+        <li><a href="#" class="button special big" id="status" onmouseover="hoverChanger(this, 'IP: mc.heroicraft.net')" onmouseout="hoverChanger(this, statusText)">IP: mc.heroicraft.net</a></li>
+      </ul>
+    </section>
 
-			<!-- One -->
-				<section id="one" class="wrapper style1">
-					<div class="container 75%">
-						<div class="row 200%">
-							<div class="6u 12u$(medium)">
-								<header class="major">
-									<h2>Welcome to HeroiCraft</h2>
-									<p>A Minecraft Server Network and Community</p>
-								</header>
-							</div>
-							<div class="6u$ 12u$(medium)">
-                <p>Welcome to HeroiCraft! We are currently constructing a new website, so please excuse any bugs, latin, or issues with the site! HeroiCraft is a community centered Minecraft Network. We have a <i>very</i> popular Survival server, with kingdoms such as Westerville and Hyvinstia, a trade centered economy, and players from all over the world. Our Creative server has marvelous builds and 48 by 48 mergeable plots, attracting builers and fun!</p>
-                <p>Next in line, we have the Games server. After builing a huge castle in Survival or an ammusement park in Creative, players come to unwind with a game of BlockHunt or Spleef. Constantly adding more, the Games server is a great place to be. Finally, the Skyblock Server. The classic skyblock island, now in a communal form, with trading and parties. There is something for everyone on HeroiCraft, so come join the family!</p>
-							</div>
-						</div>
-					</div>
-				</section>
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+      <div class="container 75%">
+        <div class="row 200%">
+          <div class="6u 12u$(medium)">
+            <header class="major">
+              <h2>Welcome to HeroiCraft</h2>
+              <p>A Minecraft Server Network and Community</p>
+            </header>
+          </div>
+          <div class="6u$ 12u$(medium)">
+            <p>HeroiCraft is a community centered Minecraft Network. We have a <i>very</i> popular Survival server, with kingdoms such as Westerville and Hyvinstia, a trade centered economy, and players from all over the world. Our Creative server has marvelous builds and 48 by 48 mergeable plots, attracting builers and fun!</p>
+            <p>Next in line, we have the Games server. After builing a huge castle in Survival or an ammusement park in Creative, players come to unwind with a game of BlockHunt or Spleef. Constantly adding more, the Games server is a great place to be. Finally, the Skyblock Server. The classic skyblock island, now in a communal form, with trading and parties. There is something for everyone on HeroiCraft, so come join the family!</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<!-- Two -->
-				<section id="two" class="wrapper style2 special">
-					<div class="container">
-						<header class="major">
-							<h2>Server Summaries</h2>
-							<p>Summaries of all of HeroiCraft's Servers</p>
-						</header>
-						<div class="row 150%">
-							<div class="6u 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="images/pic02.jpg" alt="" />
-									<h3>Survival</h3>
-								</div>
-							</div>
-							<div class="6u$ 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="images/pic03.jpg" alt="" />
-									<h3>Creative</h3>
-								</div>
-							</div>
-							<div class="6u 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="images/pic02.jpg" alt="" />
-									<h3>Games</h3>
-								</div>
-							</div>
-							<div class="6u 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="images/pic02.jpg" alt="" />
-									<h3>Skyblock</h3>
-								</div>
-							</div>
-							<div class="6u 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="images/pic02.jpg" alt="" />
-									<h3>Coming Soon</h3>
-								</div>
-							</div>
-							<div class="6u 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="images/pic02.jpg" alt="" />
-									<h3>Coming Soon</h3>
-								</div>
-							</div>
-						</div>
-						<!--
-						<ul class="actions">
-							<li><a href="#" class="button special big">Nulla luctus</a></li>
-							<li><a href="#" class="button big">Sed vulputate</a></li>
-						</ul>
-						-->
-					</div>
-				</section>
+    <!-- Two -->
+    <section id="two" class="wrapper style2 special">
+      <div class="container">
+        <header class="major">
+          <h2>Server Summaries</h2>
+          <p>Summaries of all of HeroiCraft's Servers</p>
+        </header>
+        <div class="row 150%">
+          <div class="6u 12u$(xsmall)">
+            <div class="image fit captioned">
+              <img src="images/pic02.jpg" alt="" />
+              <h3>Survival</h3>
+            </div>
+          </div>
+          <div class="6u$ 12u$(xsmall)">
+            <div class="image fit captioned">
+              <img src="images/pic03.jpg" alt="" />
+              <h3>Creative</h3>
+            </div>
+          </div>
+          <div class="6u 12u$(xsmall)">
+            <div class="image fit captioned">
+              <img src="images/pic02.jpg" alt="" />
+              <h3>Games</h3>
+            </div>
+          </div>
+          <div class="6u 12u$(xsmall)">
+            <div class="image fit captioned">
+              <img src="images/pic02.jpg" alt="" />
+              <h3>Skyblock</h3>
+            </div>
+          </div>
+          <!--
+            <ul class="actions">
+            <li><a href="#" class="button special big">Nulla luctus</a></li>
+            <li><a href="#" class="button big">Sed vulputate</a></li>
+            </ul>
+          -->
+        </div>
+      </div>
+    </section>
 
-			<!-- Three -->
-				<section id="three" class="wrapper style1">
-					<div class="container">
-						<header class="major special">
-							<h2>Staff</h2>
-							<p>Administrators and Moderators</p>
-						</header>
-						<div class="feature-grid">
-							<div class="feature">
-								<div class="image rounded"><img src="https://cravatar.eu/avatar/herocc/169.png" alt="" /></div>
-								<div class="content">
-									<header>
-										<h4>HeroCC</h4>
-										<p>Owner, Founder, Developer</p>
-									</header>
-									<p>Hello! I am HeroCC! I am the founder of HeroiCraft, and built this server from the ground up. If you have any questions or comments about the server, I'm the one to talk to!</p>
-								</div>
-							</div>
-							<div class="feature">
-								<div class="image rounded"><img src="https://cravatar.eu/avatar/rajahsearingomen/169.png" alt="" /></div>
-								<div class="content">
-									<header>
-										<h4>RajahSearingOmen</h4>
-										<p>Lead Moderator</p>
-									</header>
-									<p>Welcome to HeroiCraft! Survival is my favorite wolrd, but I also have builds in creative and skyblock! I am a persistent and good builder, so if you need any advice on a build, you can ask me! If you need any help and HeroCC is not on, ask me! Have fun!</p>
-								</div>
-							</div>
-							<div class="feature">
-								<div class="image rounded"><img src="https://cravatar.eu/avatar/f36ad0a0-d6ac-45a7-8fed-20a2082d1930/169.png" alt="" /></div>
-								<div class="content">
-									<header>
-										<h4>wp31</h4>
-										<p>Moderator, Cuthulu Enthusiast</p>
-									</header>
-                  <p>wp31 is a new moderator, who is a <i>somewhat</i> an old moderator. Also, he loves Cuthulu. <i>praisecuthulu praisecuthulu praisecuthulu</i></p>
-								</div>
-							</div>
-							<div class="feature">
-								<div class="image rounded"><img src="https://www.iconsdb.com/icons/preview/gray/question-mark-xxl.png" alt="" /></div>
-								<div class="content">
-									<header>
-										<h4>Porro aliquam</h4>
-										<p>Quaerat, excepturi eveniet laboriosam</p>
-									</header>
-									<p>Vitae earum unde, autem labore voluptas ex, iste dolorum inventore natus consequatur iure similique obcaecati aut corporis hic in! Porro sed.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+    <!-- Three -->
+    <section id="three" class="wrapper style1">
+      <div class="container">
+        <header class="major special">
+          <h2>Staff</h2>
+          <p>Administrators and Moderators</p>
+        </header>
+        <div class="feature-grid">
+          <div class="feature">
+            <div class="image rounded"><img src="https://cravatar.eu/avatar/herocc/169.png" alt="" /></div>
+            <div class="content">
+              <header>
+                <h4>HeroCC</h4>
+                <p>Owner, Founder, Developer</p>
+              </header>
+              <p>Hello! I am HeroCC! I am the founder of HeroiCraft, and built this server from the ground up. If you have any questions or comments about the server, I'm the one to talk to!</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="image rounded"><img src="https://cravatar.eu/avatar/rajahsearingomen/169.png" alt="" /></div>
+            <div class="content">
+              <header>
+                <h4>RajahSearingOmen</h4>
+                <p>Lead Moderator</p>
+              </header>
+              <p>Welcome to HeroiCraft! Survival is my favorite wolrd, but I also have builds in creative and skyblock! I am a persistent and good builder, so if you need any advice on a build, you can ask me! If you need any help and HeroCC is not on, ask me! Have fun!</p>
+            </div>
+          </div>
 
-			<!-- Four -->
-				<section id="four" class="wrapper style3 special">
-					<div class="container">
-						<header class="major">
-							<h2>Aenean elementum ligula</h2>
-							<p>Feugiat sed lorem ipsum magna</p>
-						</header>
-						<ul class="actions">
-							<li><a href="#" class="button special big">Get in touch</a></li>
-						</ul>
-					</div>
-				</section>
+          <div class="feature">
+            <div class="image rounded"><img src="https://cravatar.eu/avatar/f36ad0a0-d6ac-45a7-8fed-20a2082d1930/169.png" alt="" /></div>
+            <div class="content">
+              <header>
+                <h4>wp31</h4>
+                <p>Moderator, Cuthulu Enthusiast</p>
+              </header>
+              <p>wp31 is a new moderator, who is a <i>somewhat</i> an old moderator. Also, he loves Cuthulu. <i>praisecuthulu praisecuthulu praisecuthulu</i></p>
+            </div>
+          </div>
+        </div>
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<li><a href="https://reddit.com/r/heroicraft" class="icon fa-reddit"></a></li>
-						<li><a href="https://twitter.com/herocc_" class="icon fa-twitter"></a></li>
-						<li><a href="https://github.com/heroicraft" class="icon fa-github"></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; HeroCC</li>
-						<li>Design: <a href="http://templated.co">TEMPLATED Spatial</a></li>
-						<!--<li>Images: <a href="http://unsplash.com">Unsplash</a></li> -->
-					</ul>
-				</div>
-			</footer>
+    <!-- Four -->
+    <section id="four" class="wrapper style3 special">
+      <div class="container">
+        <header class="major">
+          <h2>Having troubles?</h2>
+          <p>Use the ticketing system below</p>
+        </header>
+        <ul class="actions">
+          <li><a href="#" class="button special big" onmousedown="alert('Captian, Comms are down! \nOur Ticketing / Communication system isn\'t active, use the subreddit!');">Get in touch</a></li>
+        </ul>
+      </div>
+    </section>
 
-	</body>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <ul class="icons">
+          <li><a href="https://reddit.com/r/heroicraft" class="icon fa-reddit"></a></li>
+          <li><a href="https://twitter.com/herocc_" class="icon fa-twitter"></a></li>
+          <li><a href="https://github.com/heroicraft" class="icon fa-github"></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; HeroCC</li>
+          <li>Design: <a href="http://templated.co">TEMPLATED Spatial</a></li>
+          <!--<li>Images: <a href="http://unsplash.com">Unsplash</a></li> -->
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
